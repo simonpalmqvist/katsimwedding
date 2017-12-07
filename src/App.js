@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {Component} from 'react'
 import styled from 'styled-components'
 import simonKathi from './simon-kathi.svg'
+import Copy, { LANGUAGE } from './Copy'
 
 const SectionWrapper = styled.div`
   width: 100%;
@@ -14,6 +15,24 @@ const SectionWrapper = styled.div`
   }
 
   ${props => props.last && 'border-bottom: none;'}
+`
+
+const LangWrapper = styled.div`
+  width: 100%;
+  text-align: right;
+  padding: 0.5rem 1rem 0 0;
+  box-sizing: border-box;
+`
+
+const LangAnchor = styled.a`
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
 `
 
 const SectionBody = styled.div`
@@ -73,29 +92,63 @@ const TitleImg = styled.img`
   }
 `
 
-export default () => (
-  <div>
-    <SectionWrapper>
-      <SectionBody>
-        <TitleImg src={simonKathi} />
-      </SectionBody>
-    </SectionWrapper>
-    <SectionWrapper>
-      <SectionBody>
-        <Title>
-          Simon & Kathi
-        </Title>
-        <Tagline>
-          Bröllop 2018
-        </Tagline>
-      </SectionBody>
-    </SectionWrapper>
-    <SectionWrapper last>
-      <SectionBody>
-        <Text>
-          Mer information kommer snart.
-        </Text>
-      </SectionBody>
-    </SectionWrapper>
-  </div>
-)
+export default class App extends Component {
+
+  constructor (props) {
+    super(props)
+
+    let language = window.location.hash.substring(1,3)
+
+    if (!Object.values(LANGUAGE).includes(language)) {
+      language = LANGUAGE.SV
+      window.location.hash = language
+    }
+
+    this.state = { language }
+  }
+
+  changeLanguage (language, event) {
+    event.preventDefault()
+
+    window.location.hash = language
+
+    this.setState({ language })
+  }
+
+  render () {
+    const lang = this.state.language
+    const otherLang = lang === LANGUAGE.SV ? LANGUAGE.DE : LANGUAGE.SV
+
+    return (
+      <div>
+        <LangWrapper>
+          <LangAnchor href='#' onClick={(event) => this.changeLanguage(otherLang, event)}>
+            {otherLang}
+          </LangAnchor>
+        </LangWrapper>
+        <SectionWrapper>
+          <SectionBody>
+            <TitleImg src={simonKathi} />
+          </SectionBody>
+        </SectionWrapper>
+        <SectionWrapper>
+          <SectionBody>
+            <Title>
+              Simon & Kathi
+            </Title>
+            <Tagline>
+              <Copy copy='title' language={lang} />
+            </Tagline>
+          </SectionBody>
+        </SectionWrapper>
+        <SectionWrapper last>
+          <SectionBody>
+            <Text>
+              <Copy copy='moreInfo' language={lang} />
+            </Text>
+          </SectionBody>
+        </SectionWrapper>
+      </div>
+    )
+  }
+} 
