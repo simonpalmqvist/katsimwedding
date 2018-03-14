@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html -d build --public-url ./",
+    "deploy": "yarn run build && firebase deploy"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
