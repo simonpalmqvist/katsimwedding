@@ -3,9 +3,52 @@ import styled from 'styled-components'
 import Header from './components/Header'
 import Section from './components/Section'
 import LanguageBar from './components/LanguageBar'
+import SectionTitle from './components/SectionTitle'
+import StaticCalendar from './components/StaticCalendar'
 import Text from './components/Text'
 import Copy, { LANGUAGE } from './components/Copy'
 import timeLeftTo from './utils/timeLeft'
+
+const Container = styled.div`
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-wrap: wrap;
+`
+
+const Column = styled.div`
+  box-sizing: border-box;
+  padding: 1rem;
+
+  :first-child:nth-last-child(1) {
+    width: 100%;
+  }
+
+  :first-child:nth-last-child(2),
+  :first-child:nth-last-child(2) ~ div {
+    width: 50%;
+
+    @media(max-width: 480px) { width: 100%; }
+  }
+
+  :first-child:nth-last-child(3),
+  :first-child:nth-last-child(3) ~ div {
+    width: 33.3333%;
+
+    @media(max-width: 480px) { width: 100%; }
+  }
+
+  :first-child:nth-last-child(4),
+  :first-child:nth-last-child(4) ~ div {
+    width: 25%;
+
+    @media(max-width: 480px) { width: 50%; }
+  }
+`
+
+const Divider = styled.div`
+  height: 3rem;
+`
 
 export default class App extends Component {
 
@@ -36,15 +79,29 @@ export default class App extends Component {
         <LanguageBar changeLanguage={this.changeLanguage.bind(this)} languageToChangeTo={otherLang} />
         <Header lang={lang} />
         <Section last>
+          <SectionTitle>
+            Information
+          </SectionTitle>
           <Text>
             <Copy copy='moreInfo' language={lang} />
           </Text>
-          <Text>
-            Sista anmälningsdag {timeLeftTo('2018-06-01')} dagar
-          </Text>
-          <Text>
-            Dagar kvar till bröllop {timeLeftTo('2018-07-12')} dagar
-          </Text>
+          <Divider />
+          <Container>
+            <Column>
+              <StaticCalendar 
+                title={<Copy copy='calendar:registration' language={lang} />}
+                day={timeLeftTo('2018-06-01')}
+                extra={<Copy copy='calendar:daysleft' language={lang} />}
+              />
+            </Column>
+            <Column>
+              <StaticCalendar 
+                title={<Copy copy='calendar:wedding' language={lang} />}
+                day={timeLeftTo('2018-07-12')}
+                extra={<Copy copy='calendar:daysleft' language={lang} />}
+              />
+            </Column>
+          </Container>
         </Section>
       </div>
     )

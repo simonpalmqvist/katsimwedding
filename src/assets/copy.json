@@ -6,5 +6,17 @@
   "moreInfo": {
     "sv": "Mer information kommer snart.",
     "de": "Weitere Informationen werden bald verfügbar sein."
+  },
+  "calendar:registration": {
+    "sv": "Anmäla sig",
+    "de": "Registrieren"
+  },
+  "calendar:wedding": {
+    "sv": "Bröllopet",
+    "de": "Hochzeit"
+  },
+  "calendar:daysleft": {
+    "sv": "dagar kvar",
+    "de": "Tage übrig"
   }
 }

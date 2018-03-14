@@ -22,6 +22,8 @@ const Title = styled.h1`
   }
 `
 const Tagline = Text.extend`
+  font-family: 'Amatic SC', cursive;
+  text-transform: uppercase;
   font-size: 3rem;
   line-height: 3rem;
 

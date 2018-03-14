@@ -4,12 +4,12 @@ import styled from 'styled-components'
 const LangWrapper = styled.div`
   width: 100%;
   text-align: right;
-  padding: 0.5rem 1rem 0 0;
+  padding: 1rem 1rem 0 0;
   box-sizing: border-box;
 `
 
 const LangAnchor = styled.a`
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2rem;
   padding: 0.1rem;
   border: none;
@@ -17,6 +17,7 @@ const LangAnchor = styled.a`
   cursor: pointer;
   color: black;
   text-decoration: none;
+  text-transform: uppercase;
 `
 
 export default (props) => (
