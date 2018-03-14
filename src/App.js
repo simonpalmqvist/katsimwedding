@@ -49,6 +49,8 @@ const Title = styled.h1`
   padding: 0;
   margin: 0;
   padding-bottom: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
 
   @media(max-width: 480px) {
     font-size: 3.5rem;
@@ -63,6 +65,7 @@ const Text = styled.p`
   line-height: 2.4rem;
   padding: 0 0.5rem;
   margin: 0;
+  text-transform: uppercase;  
 
   @media(max-width: 480px) {
     font-size: 1.2rem;
@@ -70,8 +73,8 @@ const Text = styled.p`
   }
 `
 const Tagline = Text.extend`
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
 
   @media(max-width: 480px) {
     font-size: 2rem;
@@ -145,6 +148,12 @@ export default class App extends Component {
           <SectionBody>
             <Text>
               <Copy copy='moreInfo' language={lang} />
+            </Text>
+            <Text>
+              Sista anmälningsdag { Math.round((new Date('2018-06-01') - new Date()) / (1000 * 60 * 60 * 24))} dagar
+            </Text>
+            <Text>
+              Dagar kvar till bröllop { Math.round((new Date('2018-07-12') - new Date()) / (1000 * 60 * 60 * 24))} dagar
             </Text>
           </SectionBody>
         </SectionWrapper>
