@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build entry.js --out-dir build/output"
+    "build": "parcel build index.html --public-url ./"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
