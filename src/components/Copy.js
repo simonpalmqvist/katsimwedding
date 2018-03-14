@@ -1,4 +1,4 @@
-import copy from './copy.json'
+import copy from '../assets/copy.json'
 
 export const LANGUAGE = {
   SV: 'sv',
