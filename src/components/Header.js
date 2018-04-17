@@ -12,6 +12,7 @@ const Title = styled.h1`
   line-height: 8rem;
   padding: 0;
   margin: 0;
+  color: #333;
   padding-bottom: 2rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -26,6 +27,7 @@ const Tagline = Text.extend`
   text-transform: uppercase;
   font-size: 3rem;
   line-height: 3rem;
+  color: #333;
 
   @media(max-width: 480px) {
     font-size: 2rem;

@@ -24,7 +24,7 @@ const CalendarTitle = Text.extend`
 
 const Calendar = styled.div`
   width: 70%;
-  border: 2px solid black;
+  border: 2px solid #333;
   border-radius: 20px;
   margin: 0 auto;
   padding: 0.5rem;
@@ -34,7 +34,7 @@ const Calendar = styled.div`
 `
 const Line = styled.div`
   height: 2px;
-  background: black;
+  background: #333;
   display: block;
   box-sizing: border-box;
   margin: 0.5rem -0.5rem;

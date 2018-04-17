@@ -8,6 +8,7 @@ import StaticCalendar from './components/StaticCalendar'
 import Text from './components/Text'
 import Copy, { LANGUAGE } from './components/Copy'
 import timeLeftTo from './utils/timeLeft'
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 
 const Container = styled.div`
   display: flex;
@@ -50,6 +51,16 @@ const Divider = styled.div`
   height: 3rem;
 `
 
+
+const Map = withScriptjs(withGoogleMap(props => (
+  <GoogleMap
+    defaultZoom={14}
+    defaultCenter={{ lat: 59.3250632, lng: 18.0802095 }}
+  >
+    <Marker position={{ lat: 59.3219632, lng: 18.0902095 }} />
+  </GoogleMap>
+)))
+
 export default class App extends Component {
 
   constructor (props) {
@@ -80,11 +91,12 @@ export default class App extends Component {
         <Header lang={lang} />
         <Section last>
           <SectionTitle>
-            Information
+            <Copy copy='info:header' language={lang} />
           </SectionTitle>
           <Text>
-            <Copy copy='moreInfo' language={lang} />
+            <Copy copy='info:registration' language={lang} />
           </Text>
+          <Divider />
           <Divider />
           <Container>
             <Column>
@@ -102,6 +114,46 @@ export default class App extends Component {
               />
             </Column>
           </Container>
+          <Divider />
+          <Divider />
+          <SectionTitle>
+            <Copy copy='faq:header' language={lang} />
+          </SectionTitle>
+          <Text bold><Copy copy='faq:clothing:title' language={lang} /></Text>
+          <Text>
+            <Copy copy='faq:clothing' language={lang} />
+          </Text>
+          <Divider />
+          <Text bold><Copy copy='faq:weather:title' language={lang} /></Text>
+          <Text>
+            <Copy copy='faq:weather' language={lang} />
+          </Text>
+          <Divider />
+          <Text bold><Copy copy='faq:food:title' language={lang} /></Text>
+          <Text>
+            <Copy copy='faq:food' language={lang} />
+          </Text>
+          <Divider />
+          <Text bold><Copy copy='faq:bar:title' language={lang} /></Text>
+          <Text>
+            <Copy copy='faq:bar' language={lang} />
+          </Text>
+          <Divider />
+          <Text bold><Copy copy='faq:gifts:title' language={lang} /></Text>
+          <Text>
+            <Copy copy='faq:gifts' language={lang} />
+          </Text>
+          <Divider />
+          <Divider />
+          <SectionTitle>
+            <Copy copy='contact:header' language={lang} />
+          </SectionTitle>
+          <Map 
+            googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `400px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
         </Section>
       </div>
     )

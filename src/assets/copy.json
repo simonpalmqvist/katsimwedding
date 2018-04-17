@@ -3,6 +3,62 @@
     "sv": "12 Juli 2018",
     "de": "12 Juli 2018"
   },
+  "info:header": {
+    "sv": "Information",
+    "de": "ADD"
+  },
+  "info:registration": {
+    "sv": "Kom ihåg att anmäla er innan den 1a Juni. Information om hur ni anmäler finns på inbjudan.",
+    "de": "ADD"
+  },
+  "faq:header": {
+    "sv": "Vanliga frågor",
+    "de": "ADD"
+  },
+  "faq:clothing:title": {
+    "sv": "🕺🏻 Vad är det för klädkod? 💃🏻",
+    "de": "🕺🏻 ADD 💃🏻"
+  },
+  "faq:clothing": {
+    "sv": "Enligt bröllopsguiden så gäller det lång elegant aftonklänning för damerna och högtidsdräkt för herrarna på ett eftermiddagsbröllop. Vi tycker ni kan komma i något somrigt som ni själva känner er fina i.",
+    "de": "ADD"
+  },
+  "faq:weather:title": {
+    "sv": "☀️ Sommaren är så härlig i Sverige, kommer vi vara något ute? ☀️",
+    "de": "☀️ ADD ☀️"
+  },
+  "faq:weather": {
+    "sv": "Både vigsel och middag kommer vara utomhus. Tänk på det om du är en frusen räka.",
+    "de": "ADD"
+  },
+  "faq:food:title": {
+    "sv": "🐟 Jag är allergisk mot X, innehåller maten det? 🐟",
+    "de": "🐟 ADD 🐟"
+  },
+  "faq:food": {
+    "sv": "Meddela gärna om det är något ni är allergiska mot eller om ni inte äter fisk och vill ha ett vegetariskt alternativ.",
+    "de": "ADD"
+  },
+  "faq:bar:title": {
+    "sv": "🍾 Är det \"öppen bar\"? 🍾",
+    "de": "🍾 ADD 🍾"
+  },
+  "faq:bar": {
+    "sv": "Jajemen men kom ihåg att bete er.",
+    "de": "ADD"
+  },
+  "faq:gifts:title": {
+    "sv": "🎁 Vad önskar sig brudparet? 🎁",
+    "de": "🎁 ADD 🎁"
+  },
+  "faq:gifts": {
+    "sv": "Med tanke på att vi nyligen flyttat från en lägenhet på 90kvm till 39kvm så behöver vi snarare bli av med saker än att få mer. Vill man ge en gåva så blir vi glada över ett bidrag till vår bröllopsresa som går till San Diego. 🇺🇸 Det går bra att göra på kontonummer: 8452-5, 933 293 195-6",
+    "de": "ADD"
+  },
+  "contact:header": {
+    "sv": "Hitta till bröllopet",
+    "de": "ADD"
+  },
   "moreInfo": {
     "sv": "Mer information kommer snart.",
     "de": "Weitere Informationen werden bald verfügbar sein."

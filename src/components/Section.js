@@ -5,7 +5,7 @@ const SectionWrapper = styled.div`
 width: 100%;
 padding: 3rem 2rem;
 box-sizing: border-box;
-border-bottom: 2px solid black;
+border-bottom: 2px solid #333;
 
 @media(max-width: 480px) {
   padding: 2rem 1rem;

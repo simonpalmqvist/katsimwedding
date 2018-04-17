@@ -7,6 +7,8 @@ export default styled.p`
   line-height: 2.4rem;
   padding: 0 0.5rem;
   margin: 0;
+  color: #333;
+  font-weight: ${props => props.bold ? 700 : 100};
 
   @media(max-width: 480px) {
     font-size: 1.2rem;

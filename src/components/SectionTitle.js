@@ -9,6 +9,7 @@ export default styled.h2`
   margin: 0;
   padding-bottom: 1rem;
   font-weight: 300;
+  color: #333;
   text-transform: uppercase;
 
   @media(max-width: 480px) {
