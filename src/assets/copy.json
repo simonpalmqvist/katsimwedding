@@ -5,59 +5,59 @@
   },
   "info:header": {
     "sv": "Information",
-    "de": "ADD"
+    "de": "Information"
   },
   "info:registration": {
     "sv": "Kom ihåg att anmäla er innan den 1a Juni. Information om hur ni anmäler finns på inbjudan.",
-    "de": "ADD"
+    "de": "Denkt daran bis zum 1. Juni Bescheid zu geben ob ihr kommen könnt. Informatonen zur Anmeldung findet ihr auf der Einladung."
   },
   "faq:header": {
     "sv": "Vanliga frågor",
-    "de": "ADD"
+    "de": "Fragen und Antworten"
   },
   "faq:clothing:title": {
     "sv": "🕺🏻 Vad är det för klädkod? 💃🏻",
-    "de": "🕺🏻 ADD 💃🏻"
+    "de": "🕺🏻 Dress-Code? 💃🏻"
   },
   "faq:clothing": {
     "sv": "Enligt bröllopsguiden så gäller det lång elegant aftonklänning för damerna och högtidsdräkt för herrarna på ett eftermiddagsbröllop. Vi tycker ni kan komma i något somrigt som ni själva känner er fina i.",
-    "de": "ADD"
+    "de": "Da es eine Sommerhochzeit wird halten wir uns an keinen strikten Dress-Code, tragt etwas dem Anlass entsprechendes in dem ihr euch hübsch und wohl fühlt. Lange Abendkleider und hohe Abätze nehmen zu viel Platz im Koffer weg und können zu Hause gelassen werden."
   },
   "faq:weather:title": {
     "sv": "☀️ Sommaren är så härlig i Sverige, kommer vi vara något ute? ☀️",
-    "de": "☀️ ADD ☀️"
+    "de": "☀️ Sommer in Schweden - werden wir draußen sein? ☀️"
   },
   "faq:weather": {
     "sv": "Både vigsel och middag kommer vara utomhus. Tänk på det om du är en frusen räka.",
-    "de": "ADD"
+    "de": "Die Trauung und die Feier finden draußen und am Wasser statt. Auch wenn es in Schweden im Sommer kaum dunkel verschwindet die Sonne, packt also gern eine Jacke ein."
   },
   "faq:food:title": {
     "sv": "🐟 Jag är allergisk mot X, innehåller maten det? 🐟",
-    "de": "🐟 ADD 🐟"
+    "de": "🐟 Ich bin allergisch gegen X, kann ich das Hochzeitsmenü essen? 🐟"
   },
   "faq:food": {
     "sv": "Meddela gärna om det är något ni är allergiska mot eller om ni inte äter fisk och vill ha ett vegetariskt alternativ.",
-    "de": "ADD"
+    "de": "Erwähnt bei der Anmeldung ob ihr allergisch gegen etwas seid oder keinen Fisch esst und die vegetarische Alternative bevorzugt."
   },
   "faq:bar:title": {
     "sv": "🍾 Är det \"öppen bar\"? 🍾",
-    "de": "🍾 ADD 🍾"
+    "de": "🍾 Gibt es Alkohol? 🍾"
   },
   "faq:bar": {
     "sv": "Jajemen men kom ihåg att bete er.",
-    "de": "ADD"
+    "de": "Na klar! Denkt aber daran euch zu benehmen."
   },
   "faq:gifts:title": {
     "sv": "🎁 Vad önskar sig brudparet? 🎁",
-    "de": "🎁 ADD 🎁"
+    "de": "🎁 Was wünscht sich das Brautpaar? 🎁"
   },
   "faq:gifts": {
     "sv": "Med tanke på att vi nyligen flyttat från en lägenhet på 90kvm till 39kvm så behöver vi snarare bli av med saker än att få mer. Vill man ge en gåva så blir vi glada över ett bidrag till vår bröllopsresa som går till San Diego. 🇺🇸 Det går bra att göra på kontonummer: 8452-5, 933 293 195-6",
-    "de": "ADD"
+    "de": "Da wir gerade von einer 90m2 großen in eine 39m2 große Wohnung gezogen müssen wir eher Dinge aussortieren als uns mehr zuzulegen. Möchte man uns eine Freude machen freuen wir uns über einen Beitrag zur Hochzeitsreise nach San Diego, die IBAN hierzu ist SE0980000845259332931956 "
   },
   "contact:header": {
     "sv": "Hitta till bröllopet",
-    "de": "ADD"
+    "de": "So findest du zur Hochzeit"
   },
   "moreInfo": {
     "sv": "Mer information kommer snart.",
@@ -65,7 +65,7 @@
   },
   "calendar:registration": {
     "sv": "Anmälning",
-    "de": "Registrieren"
+    "de": "Anmelden"
   },
   "calendar:wedding": {
     "sv": "Bröllop",

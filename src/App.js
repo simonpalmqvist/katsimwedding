@@ -149,7 +149,7 @@ export default class App extends Component {
             <Copy copy='contact:header' language={lang} />
           </SectionTitle>
           <Map 
-            googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTpIyD6x5bRr3sAY7xyjGBdSYmgHOyK10&v=3.exp&libraries=geometry,drawing,places"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `400px` }} />}
             mapElement={<div style={{ height: `100%` }} />}
