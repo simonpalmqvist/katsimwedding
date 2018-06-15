@@ -24,6 +24,7 @@ const CalendarTitle = Text.extend`
 
 const Calendar = styled.div`
   width: 70%;
+  max-width: 280px;
   border: 2px solid #333;
   border-radius: 20px;
   margin: 0 auto;

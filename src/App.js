@@ -7,6 +7,7 @@ import SectionTitle from './components/SectionTitle'
 import StaticCalendar from './components/StaticCalendar'
 import Text from './components/Text'
 import Copy, { LANGUAGE } from './components/Copy'
+import Weather from './components/Weather'
 import timeLeftTo from './utils/timeLeft'
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 
@@ -93,19 +94,8 @@ export default class App extends Component {
           <SectionTitle>
             <Copy copy='info:header' language={lang} />
           </SectionTitle>
-          <Text>
-            <Copy copy='info:registration' language={lang} />
-          </Text>
-          <Divider />
           <Divider />
           <Container>
-            <Column>
-              <StaticCalendar 
-                title={<Copy copy='calendar:registration' language={lang} />}
-                day={timeLeftTo('2018-06-01')}
-                extra={<Copy copy='calendar:daysleft' language={lang} />}
-              />
-            </Column>
             <Column>
               <StaticCalendar 
                 title={<Copy copy='calendar:wedding' language={lang} />}
@@ -115,6 +105,10 @@ export default class App extends Component {
             </Column>
           </Container>
           <Divider />
+          <SectionTitle>
+            <Copy copy='weather:header' language={lang} />
+          </SectionTitle>
+          <Weather />
           <Divider />
           <SectionTitle>
             <Copy copy='faq:header' language={lang} />

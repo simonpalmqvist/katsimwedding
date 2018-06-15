@@ -11,6 +11,10 @@
     "sv": "Kom ihåg att anmäla er innan den 1a Juni. Information om hur ni anmäler finns på inbjudan.",
     "de": "Denkt daran bis zum 1. Juni Bescheid zu geben ob ihr kommen könnt. Informatonen zur Anmeldung findet ihr auf der Einladung."
   },
+  "weather:header": {
+    "sv": "Väder",
+    "de": "Wetter"
+  },
   "faq:header": {
     "sv": "Vanliga frågor",
     "de": "Fragen und Antworten"
